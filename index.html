@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tableau de bord OBD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="dash">
+    <section class="gauge-wrap">
+      <svg id="tacho" class="gauge" viewBox="0 0 400 400" aria-label="Compte-tours"></svg>
+      <div class="readout">
+        <span id="rpm-value" class="big">0</span>
+        <span class="unit">tr/min</span>
+      </div>
+    </section>
+
+    <section class="center">
+      <div class="gear-box">
+        <span class="label">Rapport</span>
+        <span id="gear" class="gear">–</span>
+      </div>
+      <div id="shift-light" class="shift-light">SHIFT</div>
+      <div class="fuel">
+        <div class="fuel-head">
+          <span class="label">Essence</span>
+          <span id="fuel-value" class="fuel-value">– %</span>
+        </div>
+        <div class="fuel-track">
+          <div id="fuel-fill" class="fuel-fill"></div>
+        </div>
+        <div class="fuel-scale"><span>0</span><span>½</span><span>1</span></div>
+      </div>
+    </section>
+
+    <section class="gauge-wrap">
+      <svg id="speedo" class="gauge" viewBox="0 0 400 400" aria-label="Compteur de vitesse"></svg>
+      <div class="readout">
+        <span id="speed-value" class="big">0</span>
+        <span class="unit">km/h</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
