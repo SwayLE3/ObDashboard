@@ -1,0 +1,3 @@
+obd==0.7.3
+pygame==2.6.1
+ELM327-emulator
