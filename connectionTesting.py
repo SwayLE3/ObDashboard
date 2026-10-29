@@ -18,4 +18,5 @@ def getConnection():
             conn.close()
     return None
 
-conn = getConnection()
+if __name__ == "__main__":
+    conn = getConnection()
